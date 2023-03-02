@@ -1,4 +1,5 @@
 import React from "react";
+import Calculate from "./Calculator";
 
 class Emoji extends React.Component {
     constructor(props) {
@@ -20,6 +21,7 @@ class Emoji extends React.Component {
                 <button onClick={this.handleClick}>
                     {this.state.isToggleOn ? "😊" : "😍"}
                 </button>
+                <Calculate />
             </>
         )
     }
